@@ -1,0 +1,264 @@
+*{
+    font: normal 20px arial;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+ 
+h1,h2{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p,a,strong{
+    font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    padding-left: 304px;
+    background: #9ecfaf;
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+
+/*toda div | scroll bar -------------------------------------*/
+ 
+.des{
+
+    position: fixed; 
+    left: 0;
+    background: #720a64;
+    border: 12px solid #720a64;
+    width: 280px;
+}
+
+.f1::-webkit-scrollbar{
+    border-left: 3px solid #720a64;
+
+    width: 15px;
+    background: linear-gradient(to top,#fc45e3,#67cf8b,#fc45e3);
+}
+ 
+.f1::-webkit-scrollbar-thumb{
+
+    border-radius: 3%;    
+    border-left: 3px solid #720a64;
+    border-top: 3px solid #720a64;
+    border-bottom: 3px solid #720a64;
+    background: linear-gradient(to top,#AA4F9E,#802674,#AA4F9E);
+}
+
+.des header img{
+    
+    border-radius: 20px;
+    border-bottom: 5px solid #570C4D;
+    width: 100%;
+    max-width: 100%;
+    background: linear-gradient(to bottom, #fc45e3,#87D5A3);
+}
+
+
+/*Area de acesso das Aulas -------------------------------------*/
+
+
+.f1{
+    padding: 25px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    height: 50vh;
+    color:#570C4D;
+    display: grid;
+    background: linear-gradient(to top,#570C4D,#67cf8b, #802674);
+    
+}
+
+.f1 h1{
+    font-size: 40px;
+    color: #75ffa7;
+   text-align: center;
+   padding: 15px ;
+   margin: 30px 0;
+border-radius: 30px;
+   background: linear-gradient(to top, #c73cb4, #AA4F9E);
+   
+}
+
+/*Titulos das Aulas -------------------------------------------*/
+
+.f1 h2{
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+   
+    border-top: 2px solid #570C4D;
+    border-bottom: 2px solid #570C4D;
+    font-size: 20px;
+    padding: 20px ;
+    background: #92ffba;
+}
+
+.f1 h2:hover{
+    background: #67cf8b;
+}
+
+
+.f1 h2 ion-icon{
+    transition: 0.2s;
+font-size: 35px;
+}
+
+
+/*Caixas das aulas ---------------------------------------------*/
+
+
+.ativa{
+display: grid;
+}
+
+.ativa a{
+    transition: 0.2s;
+        border-radius: 5px;
+
+    font-size: 0px;
+    color: #570C4D;
+    border-bottom: 0px solid #570C4D;
+    padding: 0px;
+    background: #ffbbf6;
+
+}
+
+.ativa a:hover{
+    transition: 0.2s;
+
+    background: linear-gradient(to left, #802674,#87D5A3);
+}
+
+input{
+    
+    display: none;
+}
+
+  
+
+/*ativção das caixas ---------------------------------------------*/
+
+.iut:checked + .ati .ativa a{
+font-size: 20px;
+padding: 12px;
+border-bottom: 1px solid #570C4D;
+}
+
+.iut:checked + .ati  h2 ion-icon{
+    transform: rotate(180deg) ;
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+/*cabeçalho da pagina inicial*/
+
+
+.cbs h1{
+font-size: 50px;
+padding: 10px;    
+color: #75ffa7;    
+background: #720a64;    
+text-align: center;
+} 
+
+
+.cbs img{
+    padding: 10px;
+}
+
+
+.cbs p,strong{
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: #F33237;
+    font-size: 30px;
+}
+
+.cbs strong{
+  
+    padding: 0;
+}
+
+
+/*apontar*/
+
+
+.pri{
+    padding-top: 40px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ 
+.apn{
+    box-shadow: 5px 7px #fc45e3;
+
+    border-radius: 10px;
+    padding: 20px;
+    color: #75ffa7;
+    background: #570C4D;
+    text-align: center;
+    width: 200px;
+}
+.apn h2{
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.apn ion-icon{
+    
+    transform: rotate(90deg);
+    font-size: 70px;
+}
+
+
+/*explicação*/
+
+
+.exp{
+    box-shadow: 5px 7px #c73cb4;
+
+
+    border-radius: 10px;
+    padding: 20px;
+    color: #75ffa7;
+    background: #570C4D;
+    width: 300px;
+}
+
+.exp h2{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 45px;
+}
+
+.exp p{
+    font-size: 22px;
+}
+
+

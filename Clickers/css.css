@@ -1,0 +1,65 @@
+*{
+    font: normal 20px arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    padding-top: 150px;
+    background: linear-gradient(to top,#E29A37,#19202A);
+    background-image: url(img/fundo-1.avif);
+}
+
+.pai{
+    
+    
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+
+
+.pri ion-icon{
+    border: 10px solid #19202A;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 25px;
+    color: #1A1E27;
+    border-radius: 200px;
+    background: wheat;
+font-size: 170px;
+}
+
+
+.pri ion-icon:hover{
+    border-color: red;
+color: red;
+}
+
+
+.pon{
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 10px solid wheat;
+    box-shadow: 2px 2px #19202A;
+    background: #E29A37;
+    color: wheat; 
+}
+
+.pon h1,strong{
+    text-shadow: 2px 2px #19202A;
+    padding: 20px;
+    font-size: 60px;
+}
+
+.pon strong{
+
+    padding: 0;
+}

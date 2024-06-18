@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+
+p{
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+
+body{
+    padding-top: 135px;
+    background: linear-gradient(to left,#801B0E,#381510);
+}
+
+/* cabesalio ----------------------------------------------------------------- */
+
+.tp{
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+
+    border-bottom: 5px solid #F5383C ;
+    padding: 10px 20px;
+    background: #fff;
+    height: 100px;
+}
+
+/* coluna esqueda --------------------------------------------------------  */
+
+/* coluna */
+
+.di{
+    position: fixed;
+   left: 5% ;
+   transform: translateY(2%);
+
+    border: 4px solid #F5383C;
+
+background: #fff;
+width: 170px;
+padding: 15px 25px;
+
+}
+
+/* opçães */
+input{
+    display: none;
+}
+
+.gr{
+    margin: 10px 0px;
+    padding: 5px 10px;
+    border-bottom: 1px solid  #7F0D00;
+}
+
+.gr h1{
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.2s;
+
+    cursor: pointer;
+font-size: 35px;
+color: #7F0D00;
+}
+
+.gr h1:hover{
+    transition: 0.2s;
+color: #ff1e00;
+}
+
+/* conteudo opçães */
+
+
+
+.dro a{
+    padding: 1px 0px;
+    transition: 0.2s;
+
+    transition: 0.1s;
+
+color: #9c644c;
+display: block;
+font-size: 0px;
+}
+
+
+.dro a:hover{
+    transition: 0.2s;
+
+    color:#D64000;
+
+}
+
+/* funcionalidade opçães */
+
+
+.aba:checked + .gr .dro a{
+    transition: 0.1s;
+   font-size: 20px;
+}
+
+
+/* texto adicional */
+
+.bt{
+    
+    margin: 0px 29%;
+    color: #fff;
+    width: 850px;
+}
+
+.bt h1{
+
+    margin-top: 30px;
+    font-size: 80px;
+}
+.bt{
+    padding-bottom: 100px;
+}
+.bt p{
+    font-size: 25px;
+    padding: 7px 0px;
+}
+

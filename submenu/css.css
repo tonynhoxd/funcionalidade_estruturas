@@ -1,0 +1,230 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+
+body{
+    background: #F63533;
+    background-image: url(logos/logo_geral_1.png);
+    background-size: 50%;
+}
+
+
+
+
+/*começo   parte cima   ------------------------------------------------------------------------*/
+
+.inter{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top > .inter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    background: black;
+}
+
+.top{
+    background-color: white;
+    padding: 20px 4%;
+}
+
+.lgt img{
+width: 490px;
+}
+
+.bt-top a{
+    transition: 0.2s;
+
+    color: #F63533;
+    margin: 0 5px;
+    padding: 10px 14px 0px ;
+    border: 2px solid rgba(0, 0, 0, 0.568);
+font-size: 40px;
+border-radius: 200px;
+}
+
+
+
+.t1:hover{
+    transition: 0.2s;
+color: white;
+background: black;
+}
+
+.t2:hover{
+    transition: 0.2s;
+    color: white;
+    background: #0050DA;
+    border-color: #0050DA;
+}
+
+
+
+
+
+/*começo   parte baixo   ------------------------------------------------------------------------*/
+.bottom  nav ul{
+display: flex;
+align-items: center;
+justify-content:center;
+
+list-style-type: none;
+}
+
+
+
+.bottom  nav ul li a{
+    transition: 0.2s;
+
+    display: block;
+
+    font-size: 27px;
+    padding: 20px 40px;
+    color:#F63533 ;
+}
+
+.drop a:hover{
+    transition: 0.2s;
+color: black;
+background: #F63533;
+box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.54);
+}
+
+
+.o1:hover{
+    transition: 0.2s;
+color: #023A90;
+background:#F2AD09;
+box-shadow: inset 0 0 50px #f5398e;
+}
+
+.o2:hover{
+    transition: 0.2s;
+color:  #A80D15;
+background:#FDC101;
+box-shadow: inset 0 0 50px #D92B00;
+}
+
+.o3:hover{
+    transition: 0.2s;
+color: #E0B042;
+background:   #3EA3D3;
+box-shadow: inset 0 0 50px #7F5C5E;
+}
+
+
+.o4:hover{
+    transition: 0.2s;
+color: #E7258D;
+background:  #43FD87;
+box-shadow: inset 0 0 50px #E7258D;
+
+}
+
+
+.o5:hover{
+    transition: 0.2s;
+color:  #FDFDFD;
+background:   #E40206;
+box-shadow: inset 0 0 40px black;
+}
+
+
+
+
+
+.drop{
+    transition: 0.2s;
+
+
+    height: 0px;
+ position: absolute;
+width: 100%;
+background: #2D2D2D;
+overflow: hidden;
+
+}
+
+.mn-d:hover .drop{
+    transition: 0.2s;
+height: 154px;
+}
+
+.mn-d:hover .an2{
+    height: 265px;
+}
+
+.mn-d:hover .an3{
+    height: 77px;
+}
+
+.mn-d{
+    position: relative;
+}
+
+
+.mn-d .drop a{
+padding: 20px 20px;
+}
+
+
+/*segunda parte/ introdução -----------------------------------------*/
+
+.seg{
+margin: 100px 0px;
+    gap: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/*  esqueda  */
+.seq{
+    cursor: default;
+    padding: 25px;
+    border-radius: 20px;
+    background: black;
+    color: #D8302D;
+    text-align: center;
+    width: 550px;
+}
+
+.seq h1{
+
+    font-family: "Baumans", system-ui;
+    font-weight: 100;
+    font-style: normal;
+
+    text-decoration:underline;
+    font-size: 50px;
+}
+
+.seq p{
+    font-family: "Big Shoulders Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+   margin: 20px 0px;
+    font-size: 35px;
+}
+
+

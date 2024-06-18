@@ -1,0 +1,342 @@
+*{  
+    font: normal 20px arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+@keyframes degra {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position: 500%;
+    }
+
+}
+
+
+body{
+    background-image: url(img/fundo.avif);
+    background-size: 300px;
+}
+
+
+.td{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+/*
+////////////////////////////////////////////////////////
+cabesario
+////////////////////////////////////////////////////////
+*/
+
+.header{
+    background: linear-gradient(to left,#2e7e13,#945020,#1f7f88 ,#911d81,#2e7e13);
+    background-size: 400% 400%;
+    animation: degra 30s linear infinite alternate;
+}
+
+.header h1{
+    text-transform: uppercase;
+    font-size: 120px;
+   text-align: center;
+   padding: 10px 0px;
+    
+
+background: linear-gradient(to left,#58F024,#F000CF,#24DEF0 ,#F08336,#58F024);
+background-size: 400% 300%;
+animation: degra 20s linear infinite alternate;
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+}
+
+
+.header section{
+    background: #ffb6f5;
+    border-bottom: 7px solid #911d81;
+    display: flex;
+    justify-content: center;
+}
+
+.header section a,.header section h2{
+display: flex;
+cursor: pointer;
+text-decoration: none;
+justify-content: center;
+align-items: center;
+width: 150px;
+height: 60px;
+font-size: 30px;
+color: #911d81;
+transition: 0.2s;
+}
+
+
+.header section a:hover, .header section h2:hover{
+color: aliceblue;
+background: #911d81;
+}
+
+
+/*
+////////////////////////////////////////////////////////
+item
+////////////////////////////////////////////////////////
+*/
+
+
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 45px;
+}
+
+.item{
+    padding: 20px 30px;
+    width: 370px;
+    border: 5px solid #911d81;
+    border-radius: 20px;
+    background: #fab2f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.item img{
+    padding: 10px;
+    border: 3px solid #911d81;
+    border-radius: 20px;
+    background: #fff;
+    width: 100%;
+    height: 300px;
+}
+
+.item h1{
+    padding: 5px 0;
+    font-size: 40px;
+    color: #911d81;
+}
+
+
+.item p{
+    font-size: 25px;
+    color: #911d81;
+}
+
+.item h2{
+    cursor: pointer;
+    text-align: center;
+    width: 170px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #911d81;
+    color: #fdb9f4;
+    transition: 0.2s;
+}
+
+.item h2:hover{
+background: #96478b;
+}
+
+.item input{
+color: #490f41;
+background: #fff;
+padding: 10px;
+border: 2px solid #911d81;
+border-radius: 10px;
+font-size: 20px;
+outline: 0;
+}
+
+.item input::placeholder{
+    color: #490f4178;
+}
+
+
+
+/*
+////////////////////////////////////////////////////////
+carrinho
+////////////////////////////////////////////////////////
+*/
+
+.carrinho{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 0;
+    transition: 1s;
+    width: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #e0ccde;
+    justify-content: center;
+    border-top: 5px solid #490f41;
+}
+
+.carrinho::-webkit-scrollbar{
+    display: none;
+}
+
+
+.carrinho h1{
+    display: none;
+    color: #490f41;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.car{
+    display: none;
+}
+
+
+ .ui{
+    color: #490f41;
+    border-bottom: 2px solid #490f41;
+    padding: 20px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ifo{
+    display: none;
+    gap: 20px;
+}
+
+.ifo strong{
+    width: 200px;
+}
+
+
+.ui p{
+    display: none;
+    cursor: pointer;
+    color: #e0ccde;
+    border-radius: 10px;
+    padding: 10px;
+    background: #490f41;
+    transition: 0.2s;
+}
+
+.ui p:hover{
+    background: #a52294;
+}
+
+
+
+.confi{
+    border-top: 4px solid #490f41;
+    padding: 30px 0 ;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.confi h2{
+    font-size: 40px;
+}
+.confi h2 strong{
+    color: #620255;
+    font-size: 45px;
+}
+
+
+.confi h1{
+    cursor: pointer;
+    transition: 0.2s;
+    color: #e0ccde;
+    padding: 10px;
+    border-radius: 10px;
+    background: #490f41;
+    font-size: 30px;
+}
+
+
+.confi h1:hover{
+background: #9f799c;
+}
+
+
+/*
+////////////////////////////////////////////////////////////////////////////
+ divição
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.cari{
+    display: none;
+}
+
+.bucar{
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+
+.bucar label ion-icon{
+    position: fixed;
+    top: 5%;
+    right: 45px;
+    padding: 13px;
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    color: #490f41;
+    border: 4px solid #490f41;
+    background: #ffb6f5;
+    border-radius: 20px;
+}
+
+
+.cari:checked + .bucar .carrinho{
+    padding: 20px 45px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+
+
+.cari:checked + .bucar .carrinho .car .ifo{
+display: flex;
+}
+
+
+
+.cari:checked + .bucar .carrinho .confi{
+    display: flex;
+}
+
+
+
+.cari:checked + .bucar .carrinho .ui{
+    display: flex;
+}
+
+
+
+.cari:checked + .bucar .carrinho .ui p{
+    display: block;
+}
+
+
+
+.cari:checked + .bucar .carrinho h1{
+    display: block;
+}

@@ -1,0 +1,534 @@
+body{
+margin: 0;
+padding: 0;
+background-image: url(fundo.jpg);
+background-size: 300px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* começo  -------------------------------------------------------------------------------------------------------*/
+
+
+.pri{
+    min-height: 628.9px;
+    max-height: 100%;
+    
+    padding-top: 20px;
+
+    border: 3px solid khaki;
+    background-image: url(logo-pri.webp);
+    background-size: 200px;
+}
+
+
+.p-tl h1{
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    background: #CADD97;
+    font-size: 70px;
+    color: #242D1F;
+    text-shadow: 5px 3px #BAC408;
+}
+
+
+
+
+.gt{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.gt h1{
+    margin-bottom: 50px;
+    text-align: center;
+   background: #CADD97;
+   border-radius: 10px;
+    font-size: 2em;
+    color: #242D1F;
+    text-shadow: 5px 3px #BAC408;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+
+
+.trigger-wrappaer{
+    transition: 0.2s;
+    background: #CADD97;
+    border-radius: 5px;
+    box-shadow:  3px 5px rgb( 60, 55, 28, .5);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.put1-tl{
+    transition: 0.2s;
+    color: #242D1F;
+    font-family: monospace;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.put1-tl::before{
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 24px;
+    margin-right: 10px;
+    background: #BAC408;
+}
+
+
+.put1-tl::after{
+    transition: 0.2s;
+    content: '+';
+    float: right;
+}
+
+.put1-tl:hover{
+    transition: 0.3s;
+    color: #242d1f75;
+}
+
+
+.put1-ct{
+    transition: 0.2s;
+    padding: 0px;
+    color: #242D1F;
+    font-family: sans-serif;
+    line-height: 1.4em;
+    font-size: 0px;
+}
+
+
+.trigger-input{
+ display: none; 
+}
+
+
+
+
+.trigger-input:checked + .trigger-wrappaer .put1-ct {
+    transition: 0.4s;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.trigger-input:checked + .trigger-wrappaer .put1-tl::after {
+ transform: rotate(45deg) ;
+ transition: 0.5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOVIDADE  -------------------------------------------------------------------------------------------------------*/
+
+    
+
+
+.ipu{
+display: none;
+}
+
+.bl{
+    padding-top: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.not{
+    border: 0px solid khaki;
+margin-left: 105px;
+    transition: 0.3s;
+    font-family: 'Bebas Neue', sans-serif;
+    border-radius: 20px;
+    text-align: center;
+height: 70px;
+width: 190px;
+background: khaki;
+color: orange;
+margin-bottom: 20px;
+
+}
+.not h1{
+font-size: 45px;    
+padding-top: 7px;
+margin: 0;
+}
+.not ion-icon{
+    color: white;
+width: 0;
+}
+.not:hover{
+    border: 5px solid khaki;
+    align-items: center;
+    transition: 0.3s;
+    background-size: 100px;
+    background-image: url(fundo2..jpeg);
+    color: white;
+    height: 155px;   
+}
+
+.not:hover ion-icon{
+    cursor: pointer;
+    transition: 0.4s;
+    height: 80px;
+    width: 80px;
+    transform: rotate(-90deg);
+}
+
+.ipu:checked + .bl .not:hover ion-icon{
+    transform: rotate(90deg);
+}
+
+
+
+.ipu:checked + .bl .aba{
+    transition: 0.5s;
+    height: 900px;  
+    width: 400px;
+    border: 5px solid khaki;
+}
+
+
+
+
+
+.aba{
+    border: 0px solid khaki;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    border-radius: 20px;
+    background-image: url(fundo2..jpeg);
+    background-size: 200px;
+    width: 400px;
+    height: 0px; 
+}
+
+
+
+.bo{
+    font-size: 0px;
+}
+
+
+.bo{
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 20px;
+    margin: 70px;
+    color: green;
+    background: greenyellow;
+    height: 53px;
+    font-size: 20px;
+}
+
+
+
+.aba:hover >.bo:hover{
+    background: rgb(159, 200, 93);
+    transition: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+.gala{
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0px;
+}
+.gala h2,p,a{
+    font-size: 0px;
+}
+
+
+.ipu:checked + .bl .aba .gala{
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 20px;
+    margin: 70px;
+    color: midnightblue;
+    background: mediumturquoise;
+    height: 53px;
+    font-size: 20px;
+}
+
+
+
+.ipu:checked + .bl .aba .gala:hover {
+    color:  white;
+    transition: 0.3s;
+    background-size: 200px;
+    background-image: url(gala.webp) ;
+ height: 300px;
+ width: 400px;
+ margin: 0;
+}
+
+
+
+.aba:hover >.gala:hover h2  {
+    font-size: 20px;
+}
+.aba:hover >.gala:hover p  {
+    font-size: 20px;
+}
+.aba:hover >.gala:hover a  {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flor{
+    font-family: 'Playball', cursive;
+    font-size: 0px;
+}
+.flor h2,p,a{
+    font-size: 0px;
+}
+
+.ipu:checked + .bl .aba .flor{
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 20px;
+    margin: 70px;
+    color: orchid;
+    background: pink;
+    height: 53px;
+    font-size: 20px;
+}
+
+
+.ipu:checked + .bl .aba .flor:hover{
+    color:  white;
+    transition: 0.3s;
+    background-size: 300px;
+    background-image: url(flor.webp) ;
+    height: 300px;
+ width: 400px;
+ margin: 0;
+}
+
+.aba:hover >.flor:hover h2  {
+    font-size: 20px;
+}
+.aba:hover >.flor:hover p  { font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+.aba:hover >.flor:hover a  { font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+.loco{
+    font-family: 'Dancing Script', cursive;
+    font-size: 0px;
+}
+.loco h2,p,a{
+    font-size: 0px;
+}
+
+.ipu:checked + .bl .aba .loco{
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 20px;
+    margin: 70px;
+    color: black;
+    background: gold;
+    height: 53px;
+    font-size: 20px;
+}
+
+
+
+.ipu:checked + .bl .aba .loco:hover{
+    color:  white;
+    transition: 0.3s;
+    background-size: 200px;
+    background-image: url(loco.webp) ;
+    height: 300px;
+ width: 400px;
+ margin: 0;
+}
+.aba:hover >.loco:hover h2  {
+    font-size: 20px;
+}
+.aba:hover >.loco:hover p  { font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+.aba:hover >.loco:hover a  { font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+.for{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 0px;
+}
+.for h2,p,a{
+    font-size: 0px;
+}
+
+.ipu:checked + .bl .aba .for{
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 20px;
+    margin: 70px;
+    color: dodgerblue;
+    background: orange;
+    height: 53px;
+    font-size: 17px;
+}
+
+
+.ipu:checked + .bl .aba .for:hover{
+    color:  white;
+    transition: 0.3s;
+    background-size: 200px;
+    background-image: url(for.webp) ;
+    height: 300px;
+ width: 400px;
+ margin: 0;
+}
+.aba:hover >.for:hover h2  {
+    font-size: 20px;
+}
+.aba:hover >.for:hover p  { font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+.aba:hover >.for:hover a  { font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+.gero{
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 0px;
+}
+.gero h2,p,a{
+    font-size: 0px;
+}
+
+.ipu:checked + .bl .aba .gero{
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 20px;
+    margin: 70px;
+    color: darkolivegreen;
+    background: rgb(26, 34, 8);
+    height: 53px;
+    font-size: 20px;
+}
+
+
+
+.ipu:checked + .bl .aba .gero:hover{
+    color:  white;
+    transition: 0.3s;
+    background-size: 200px;
+    background-image: url(gero.jpg) ;
+    height: 300px;
+ width: 400px;
+ margin: 0;
+}
+.aba:hover >.gero:hover h2  {
+    font-size: 20px;
+}
+.aba:hover >.gero:hover p  { font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+.aba:hover >.gero:hover a  { font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* responsivo----------------------------------------------------------------------------------------------------*/                  
+
+
+@media screen and (max-width:1100px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

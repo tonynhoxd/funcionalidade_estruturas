@@ -1,0 +1,103 @@
+*{
+    font: normal 15px arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    padding: 0 200px;
+    height: 640px;
+    justify-content: space-around;
+    align-items: center;
+    background: lightpink;
+}
+
+
+.box{
+    padding: 20px 33px;
+    border-radius: 20px;
+    border: 7px solid goldenrod;
+    background: lemonchiffon;
+    width: 500px;
+    display: flex;
+    gap: 45px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.box::-webkit-scrollbar{
+    height: 20px;
+    background: goldenrod;
+}
+
+.box::-webkit-scrollbar-thumb{
+border-top: 7px solid goldenrod;
+background: gold;
+border-radius: 20px;
+}
+
+
+.item{
+    border-radius: 10px;
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 230px;
+    background: olivedrab;
+}
+
+.item h1{
+    font-size: 25px;
+}
+
+.item p{
+    font-size: 15px;
+}
+
+
+/*
+/////////////////////////////////////////////////////////////////////////
+ scroll Y - scroll Y - scroll Y - scroll Y - scroll Y - scroll Y - scroll Y 
+/////////////////////////////////////////////////////////////////////////
+*/
+
+
+.box2{
+    padding: 23px 20px;
+    width: 210px;
+    height: 550px;
+    border: 7px solid darkcyan;
+    border-radius: 20px;
+    background: lightcyan;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: grid;
+    gap: 30px;
+}
+
+.box2 .item h1{
+    font-size: 25px;
+}
+
+.box2 .item p{
+    font-size: 17.5px;
+}
+
+.box2::-webkit-scrollbar{
+    height: 20px;
+    background: darkcyan;
+}
+
+.box2::-webkit-scrollbar-thumb{
+border-left: 7px solid darkcyan;
+background: lightseagreen;
+border-radius: 20px;
+}
+
+
+

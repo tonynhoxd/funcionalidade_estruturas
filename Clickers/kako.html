@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliker</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+<body>
+
+
+<div class="pai">
+    <div class="pri" >
+        <ion-icon name="disc-outline"  onclick="clicar()"></ion-icon>
+    </div>
+    
+    <div class="pri">
+        <ion-icon name="move-outline" onmouseenter="clicar2()"></ion-icon>    
+    </div>
+
+    <div class="pri">
+        <ion-icon name="infinite-outline" onmousemove="clicar3()"></ion-icon>
+    </div>
+</div>
+
+
+
+<div class="pai">
+    <div class="pri" >
+        <ion-icon name="hand-left-outline" onmouseup="clicar4()"></ion-icon>
+    </div>
+    
+    <div class="pri">
+        <ion-icon name="contract-outline" onmouseout="clicar5()"></ion-icon>
+    </div>
+
+    <div class="pri">
+        <ion-icon name="refresh-outline" onmousedown="clicar6()"></ion-icon>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="pon">
+    <h1>Pontos: <strong id="pro">0</strong></h1>
+</div>
+<script>
+
+var ponto = window.document.getElementById('pro')
+
+
+var n1 = 0
+
+var cos = 1
+
+
+function clicar(){
+
+
+n1 = n1 + 25
+
+ponto.innerText = n1
+
+}
+
+
+function clicar5(){
+
+
+n1 = n1 + 75
+
+ponto.innerText = n1
+
+}
+
+
+function clicar3(){
+
+
+n1 = n1 + 1
+
+ponto.innerText = n1
+
+}
+
+
+function clicar4(){
+
+
+n1 = n1 + 30
+
+ponto.innerText = n1
+
+}
+
+
+function clicar2(){
+
+
+n1 = n1 + 80
+
+ponto.innerText = n1
+
+}
+
+
+function clicar6(){
+
+
+n1 = 0
+
+ponto.innerText = n1
+
+}
+
+
+</script>
+
+</body>
+</html>
